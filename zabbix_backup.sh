@@ -23,7 +23,7 @@ echo "start zabbix-sever service"
 systemctl start zabbix-server
 sleep 3
 echo "making archive of DB"
-# make archive
+# Make archive
 tar -czvf /home/nordmin/backup/zabbix.tar.gz -P /home/nordmin/backup/zabbix.sql
 # rsync -avz /home/nordmin/backup/  nordmin@192.168.3.202:/share/zabbix/
 
