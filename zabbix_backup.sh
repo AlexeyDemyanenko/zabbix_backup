@@ -12,7 +12,7 @@ rsync $params /etc/nginx/conf.d/ /home/nordmin/backup/nginx_conf
 echo "stop zabbix-server"
 # stop zabbix-server for mysqldump DB
 systemctl stop zabbix-server
-#sleep - waiting time for stoping
+# sleep - waiting time for stoping
 sleep 3
 echo "make zabbixBD dump"
 # make dump
